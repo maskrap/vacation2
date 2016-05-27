@@ -1,8 +1,9 @@
 <!DOCTYPE html>
+
 <html>
   <head>
     <title>Vacation Croatia</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
   </head>
 
@@ -25,8 +26,24 @@
 
           <ul class="nav navbar-nav navbar-right">
             <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">Activities</a></li>
-            <li><a href="#">Accommodations</a></li>
+            <li class="dropdown">
+              <a data-toggle="dropdown" data-target="#">Activities<strong class="caret"></strong></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Basketball</a></li>
+                <li><a href="#">Swimming</a></li>
+                <li><a href="#">Beach</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a data-toggle="dropdown" data-target="#">Accommodations<strong class="caret"></strong></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Hostels</a></li>
+                  <li><a href="#">Hotels</a></li>
+                  <li><a href="#">Tents</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Help</a></li>
+                </ul>
+            </li>
           </ul>
 
         </div>
@@ -34,9 +51,8 @@
     </div>
     <!-- Nav Bar End -->
 
-    <!-- Carousel Jumbotron -->
-   <div class="container">
 
+    <!-- Carousel Jumbotron -->
       <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -50,17 +66,33 @@
         <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
       </div>
 
-
-      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
+            <!-- Features Rows/Columns -->
+
+            <div class="container">
+             <div class="row">
+                 <div class="col-sm-6">
+                   <strong class="glyphicon glyphicon-glass"></strong>
+                   <h2>Activities</h2>
+                    <p>Check out all available activities in Croatia.</p>
+                  </div>
+                <div class="col-sm-6">
+                    <strong class="glyphicon glyphicon-bed"></strong>
+                    <h2>Accommodations</h2>
+                    <p>Where and how would you like to sleep?</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Features Rows/Columns End -->
 
 
 
@@ -71,5 +103,7 @@
     <!-- Content Container End -->
 
     </div>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
